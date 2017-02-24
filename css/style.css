@@ -721,7 +721,7 @@ input.ui-input-text, .ui-input-search {
 }
 #contactstab:after { 
     background:  url("../images/contact.png") 50% 50% no-repeat;  
-	background-size: 16px 24px; 
+	background-size: 28px 26px; 
 }
 .allinea {
 	text-align: center;
@@ -748,4 +748,8 @@ input.ui-input-text, .ui-input-search {
 .ui-header {
 	border-top: none;
 	border-bottom:solid #EF8C2E 5px;
+}
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
 }
