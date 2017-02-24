@@ -16,6 +16,20 @@
 	
 
 	<style>
+		.demo-iframe-holder {
+  position: fixed; 
+  right: 0; 
+  bottom: 0; 
+  left: 0;
+  top: 0;
+  -webkit-overflow-scrolling: touch;
+  overflow-y: scroll;
+}
+
+.demo-iframe-holder iframe {
+  height: 100%;
+  width: 100%;
+}
 		#footerTabs {
 			background: #FFF -webkit-radial-gradient(circle, #FFF, #dee2e4);
 		}
@@ -33,8 +47,8 @@
         
 
     
-    <div data-role="content">
-         <iframe src="http://www.oelmarkt.ch/" style=" position:absolute; left: 0; right: 0; bottom: 0; top: 0px;width:100%;height:100%;" frameborder="0"></iframe>
+    <div data-role="content" class="demo-iframe-holder">
+         <iframe src="http://www.oelmarkt.ch/" frameborder="0"></iframe>
     </div>  
     
 	
