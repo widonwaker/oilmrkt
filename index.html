@@ -14,13 +14,14 @@
     <link href="css/style.css" rel="stylesheet" />
     <link href="css/font-awesome.min.css" rel="stylesheet" />
     <script>
-    //function onDeviceReady() {
+    document.addEventListener("deviceready", onDeviceReady, false);	    
+    function onDeviceReady() {
     var devicePlatform = device.platform;
 	    alert(devicePlatform);
 	if (devicePlatform === "Android") {
 		$('.demo-iframe-holder').css('position', 'fixed');
 	}
-    //}
+    }
     </script>
 	
 
