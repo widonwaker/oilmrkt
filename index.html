@@ -17,7 +17,6 @@
     document.addEventListener("deviceready", onDeviceReady, false);	    
     function onDeviceReady() {
     var devicePlatform = device.platform;
-	    alert(devicePlatform);
 	if (devicePlatform === "Android") {
 		$('.demo-iframe-holder').css('position', 'fixed');
 	}
@@ -66,7 +65,7 @@
 	<div data-role="footer" data-position="fixed" data-tap-toggle="false" class="nav-glyphish">
 		<div data-role="navbar" class="nav-glyphish">
 			<ul>
-				<li><a href="#" id="hometab" data-icon="custom" class="ui-btn-active">Home</a></li>
+				<li><a href="#" id="hometab" data-icon="custom" class="ui-btn-active">Hauptseite</a></li>
                 <!--<li><a href="#" id="tabB" data-icon="custom" >Services</a></li>-->
 				<li><a href="#" onClick="toContacts();" id="contactstab" data-icon="custom">Über uns</a></li>
 			</ul>
