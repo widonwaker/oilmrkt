@@ -1,0 +1,69 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<meta charset="utf-8" /> 
+	<title>Action Limos</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"> 	 
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>  
+    <script type="text/javascript" src="js/onesignal.js"></script>
+	<link rel="stylesheet" href="themes/oelmarkt.min.css" />
+	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css" />
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<script src="js/jquery.mobile-1.4.5.min.js"></script>
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+	
+
+	<style>
+		#footerTabs {
+			background: #FFF -webkit-radial-gradient(circle, #FFF, #dee2e4);
+		}
+		.ui-listview sup {
+			font-size: 0.6em;
+			color: #cc0000;
+		}
+	</style>
+
+</head> 
+<body> 
+ 
+<div data-role="page"> 
+
+        
+
+    
+    <div data-role="content">
+         <iframe src="http://www.oelmarkt.ch/" style="position:fixed; top:0px; left:0px; bottom:0px; right:0px; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden;"></iframe>
+    </div>  
+    
+	
+	<div data-role="footer" data-position="fixed" data-tap-toggle="false" class="nav-glyphish">
+		<div data-role="navbar" class="nav-glyphish">
+			<ul>
+				<li><a href="#" id="hometab" data-icon="custom" class="ui-btn-active">Home</a></li>
+                <!--<li><a href="#" id="tabB" data-icon="custom" >Services</a></li>-->
+				<li><a href="#" onClick="location.href='about.html'" id="contactstab" data-icon="custom">Contacts</a></li>
+			</ul>
+		</div><!-- /navbar -->
+	</div><!-- /footer -->
+</div><!-- /page --> 
+  
+
+
+<script>
+document.addEventListener("offline", onOffline, false);
+function offlineAppreso() {
+   //
+}	
+function onOffline() {
+navigator.notification.alert(
+    'You need an internet connection to use this application.',  // message
+    offlineAppreso,         // callback
+    'Warning!',            // title
+    'Ok'                  // buttonName
+);
+}
+</script>	
+</body> 
+</html> 
