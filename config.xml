@@ -42,6 +42,7 @@
 	
 	<plugin name="cordova-plugin-splashscreen" source="npm"/>
 	<plugin name="cordova-plugin-dialogs" source="npm"/>
+	<plugin name="cordova-plugin-device" source="npm"/>
 	<plugin name="cordova-plugin-statusbar" source="npm"/>
 	<plugin name="cordova-plugin-network-information" source="npm"/>
 	<plugin name="cordova-plugin-inappbrowser" source="npm"/>
