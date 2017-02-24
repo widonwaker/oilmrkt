@@ -34,7 +34,7 @@
 
     
     <div data-role="content">
-         <iframe src="http://www.oelmarkt.ch/" style="position:fixed; top:0px; left:0px; bottom:0px; right:0px; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden;"></iframe>
+         <iframe src="http://www.oelmarkt.ch/" style="position:fixed; top:0px; left:0px; bottom:0px; right:0px; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden;" scrolling="yes"></iframe>
     </div>  
     
 	
@@ -43,7 +43,7 @@
 			<ul>
 				<li><a href="#" id="hometab" data-icon="custom" class="ui-btn-active">Home</a></li>
                 <!--<li><a href="#" id="tabB" data-icon="custom" >Services</a></li>-->
-				<li><a href="#" onClick="location.href='about.html'" id="contactstab" data-icon="custom">Contacts</a></li>
+				<li><a href="#" onClick="toContacts();" id="contactstab" data-icon="custom">Contacts</a></li>
 			</ul>
 		</div><!-- /navbar -->
 	</div><!-- /footer -->
@@ -64,6 +64,16 @@ navigator.notification.alert(
     'Ok'                  // buttonName
 );
 }
-</script>	
+	
+function toHome() {
+	$(":mobile-pagecontainer").pagecontainer("change", "index.html", {transition: "fade"} );
+}
+
+function toContacts() {
+	$(":mobile-pagecontainer").pagecontainer("change", "about.html", {transition: "fade"} );
+}	
+</script>
+	
+	
 </body> 
 </html> 
