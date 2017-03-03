@@ -17,6 +17,7 @@
     document.addEventListener("deviceready", onDeviceReady, false);	    
     function onDeviceReady() {
     var devicePlatform = device.platform;
+
 	if (devicePlatform === "Android") {
 		$('.demo-iframe-holder').css('position', 'fixed');
 	}
@@ -76,7 +77,7 @@
 
 
 <script>
-document.addEventListener("offline", onOffline, false);
+/*document.addEventListener("offline", onOffline, false);
 function offlineAppreso() {
    //
 }	
@@ -87,7 +88,7 @@ navigator.notification.alert(
     'Warnung!',            // title
     'Ja'                  // buttonName
 );
-}
+}*/
 
 function toHome() {
 	$(":mobile-pagecontainer").pagecontainer("change", "index.html", {transition: "fade"} );
