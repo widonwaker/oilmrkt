@@ -1,3 +1,7 @@
+body {
+	text-align: center;
+}
+
 /* === PAGE BACKGROUND AND GENERICS === */
 .ui-page, .ui-mobile-viewport {
 	background: url(images/tiling_stripes.gif);
@@ -752,4 +756,30 @@ input.ui-input-text, .ui-input-search {
 ::-webkit-scrollbar {
     width: 0px;  /* remove scrollbar space */
     background: transparent;  /* optional: just make scrollbar invisible */
+}
+#IOSheader {
+	margin-bottom: 0px;
+}
+.iOScontent {
+	background-image: url(../images/image_user.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+h1.iOStxt {
+	font-weight: bold;
+	color: #7D7D7D;
+	text-align: center;
+}
+h3.iOStxt {
+	color: #7D7D7D;
+	text-align: center;
+}
+.iOSbtn {
+    display:inline-block;
+    color:#FFFFFF;
+    border:1px solid #CCC;
+    background:#444;
+    box-shadow: 0 0 5px -1px rgba(0,0,0,0.2);
+    padding: 5px;
+    text-align: center;
 }
